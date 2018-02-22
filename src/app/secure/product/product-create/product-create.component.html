@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="col-6 offset-3">
+    <form novalidate
+          [formGroup]="product"
+          (ngSubmit)="addProduct()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text"
+               class="form-control"
+               formControlName="name"
+               id="name"
+               [ngClass]="isValid('name')"
+               placeholder="Enter Name">
+        <div class="invalid-feedback">
+          Please provide a valid name.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text"
+               class="form-control"
+               formControlName="price"
+               id="price"
+               [ngClass]="isValid('price')"
+               placeholder="Enter Price">
+        <div class="invalid-feedback">
+          Please provide a valid price.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="brand">Brand</label>
+        <input type="text"
+               class="form-control"
+               formControlName="brand"
+               id="brand"
+               [ngClass]="isValid('brand')"
+               placeholder="Enter Brand">
+        <div class="invalid-feedback">
+          Please provide a valid brand.
+        </div>
+      </div>
+
+      <button type="submit"
+              [disabled]="product.valid"
+              class="btn btn-primary">Submit
+      </button>
+    </form>
+  </div>
+</div>
