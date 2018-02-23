@@ -1,5 +1,6 @@
 <div class="container">
-  <button class="btn btn-sm btn-success" (click)="navigate()">
+  <button class="btn btn-sm btn-success"
+          (click)="navigate()">
     Create
   </button>
   <div class="row">
@@ -13,11 +14,11 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Belt</td>
-        <td>120</td>
-        <td>Nike</td>
+      <tr *ngFor="let product of products; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.brand}}</td>
       </tr>
       </tbody>
     </table>

@@ -1,13 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import {AppRoutingModule} from './app-routing.module';
 
-import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './public/home/home.component';
-import { PublicComponent } from './public/public.component';
-import { SecureComponent } from './secure/secure.component';
+import {AppComponent} from './app.component';
+import {LoginComponent} from './login/login.component';
+import {PublicComponent} from './public/public.component';
+import {SecureComponent} from './secure/secure.component';
 import {SecureModule} from './secure/secure.module';
 import {PublicModule} from './public/public.module';
 
@@ -28,4 +27,5 @@ import {PublicModule} from './public/public.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

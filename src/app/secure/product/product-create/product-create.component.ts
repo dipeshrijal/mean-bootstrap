@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ProductService} from '../../product.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product-create',
@@ -9,7 +11,9 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class ProductCreateComponent implements OnInit {
   product: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private productService: ProductService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -21,7 +25,9 @@ export class ProductCreateComponent implements OnInit {
   }
 
   addProduct() {
-    console.log(this.product.value);
+    this.productService.create(this.product.value).subscribe(
+      (data) => this.router.navigateByUrl('admin/products')
+    );
   }
 
   isValid(control: string): string {
