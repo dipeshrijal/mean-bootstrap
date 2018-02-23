@@ -3,10 +3,13 @@ const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 const config = require('./server/config/config');
 const app = express();
 const router = express.Router();
+
+//app.set('port', (process.env.PORT || 5000));
 
 require('./server/config/database')(mongoose, config);
 

@@ -8,11 +8,11 @@ export class ProductService {
   }
 
   getProducts() {
-    return this.http.get('http://localhost:3000/api/products');
+    return this.http.get('api/products');
   }
 
   create(product) {
-    return this.http.post('http://localhost:3000/api/products', product);
+    return this.http.post('api/products', product);
   }
 
 }
