@@ -528,10 +528,10 @@ var ProductService = /** @class */ (function () {
         this.http = http;
     }
     ProductService.prototype.getProducts = function () {
-        return this.http.get('https://limitless-inlet-11629.herokuapp.com/api/products');
+        return this.http.get('api/products');
     };
     ProductService.prototype.create = function (product) {
-        return this.http.post('https://limitless-inlet-11629.herokuapp.com/api/products', product);
+        return this.http.post('api/products', product);
     };
     ProductService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
