@@ -4,6 +4,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
 require('dotenv').config();
+const helmet = require('helmet');
 
 const config = require('./server/config/config');
 const app = express();
@@ -13,6 +14,7 @@ const router = express.Router();
 
 require('./server/config/database')(mongoose, config);
 
+app.use(helmet());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended': 'false'}));
