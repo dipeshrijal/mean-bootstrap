@@ -8,11 +8,11 @@ export class ProductService {
   }
 
   getProducts() {
-    return this.http.get('api/products');
+    return this.http.get('https://limitless-inlet-11629.herokuapp.com/api/products');
   }
 
   create(product) {
-    return this.http.post('api/products', product);
+    return this.http.post('https://limitless-inlet-11629.herokuapp.com/api/products', product);
   }
 
 }
