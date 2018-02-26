@@ -6,6 +6,7 @@ import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
 import {LoginComponent} from './auth/login/login.component';
+import {RegisterService} from './auth/register/register.service';
 import {PublicComponent} from './public/public.component';
 import {SecureComponent} from './secure/secure.component';
 import {SecureModule} from './secure/secure.module';
@@ -28,7 +29,9 @@ import { RegisterComponent } from './auth/register/register.component';
     SecureModule,
     PublicModule
   ],
-  providers: [],
+  providers: [
+    RegisterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

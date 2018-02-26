@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {RegisterService} from './register.service';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +11,8 @@ export class RegisterComponent implements OnInit {
 
   register: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private registerService: RegisterService) {
   }
 
   ngOnInit() {
@@ -23,7 +25,11 @@ export class RegisterComponent implements OnInit {
   }
 
   signup() {
+    if (this.register.invalid) { return; }
 
+    this.registerService.register(this.register.value).subscribe(
+      done => console.log(done)
+    );
   }
 
   isValid(control: string): string {
