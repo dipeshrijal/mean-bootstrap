@@ -18,48 +18,54 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /***/ }),
 
 /***/ "../../../../../src/app/app-routing.module.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__public_public_component__ = __webpack_require__("../../../../../src/app/public/public.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__secure_secure_component__ = __webpack_require__("../../../../../src/app/secure/secure.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__routes_public_routes__ = __webpack_require__("../../../../../src/app/routes/public.routes.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routes_secure_routes__ = __webpack_require__("../../../../../src/app/routes/secure.routes.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var router_1 = __webpack_require__("../../../router/esm5/router.js");
-var login_component_1 = __webpack_require__("../../../../../src/app/login/login.component.ts");
-var public_component_1 = __webpack_require__("../../../../../src/app/public/public.component.ts");
-var secure_component_1 = __webpack_require__("../../../../../src/app/secure/secure.component.ts");
-var public_routes_1 = __webpack_require__("../../../../../src/app/routes/public.routes.ts");
-var secure_routes_1 = __webpack_require__("../../../../../src/app/routes/secure.routes.ts");
+
+
+
+
+
+
+
 var routes = [
-    { path: 'login', component: login_component_1.LoginComponent },
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_2__login_login_component__["a" /* LoginComponent */] },
     { path: '', redirectTo: '/', pathMatch: 'full' },
     {
-        path: '', component: public_component_1.PublicComponent,
-        data: { title: 'Public Views' }, children: public_routes_1.PUBLIC_ROUTES
+        path: '', component: __WEBPACK_IMPORTED_MODULE_3__public_public_component__["a" /* PublicComponent */],
+        data: { title: 'Public Views' }, children: __WEBPACK_IMPORTED_MODULE_5__routes_public_routes__["a" /* PUBLIC_ROUTES */]
     },
     {
-        path: '', component: secure_component_1.SecureComponent,
-        data: { title: 'Secure Views' }, children: secure_routes_1.SECURE_ROUTES
+        path: '', component: __WEBPACK_IMPORTED_MODULE_4__secure_secure_component__["a" /* SecureComponent */],
+        data: { title: 'Secure Views' }, children: __WEBPACK_IMPORTED_MODULE_6__routes_secure_routes__["a" /* SECURE_ROUTES */]
     },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [router_1.RouterModule.forRoot(routes)],
-            exports: [router_1.RouterModule]
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(routes)],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
 }());
-exports.AppRoutingModule = AppRoutingModule;
+
 
 
 /***/ }),
@@ -90,24 +96,24 @@ module.exports = "<router-outlet></router-outlet>\n"
 /***/ }),
 
 /***/ "../../../../../src/app/app.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
+
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
     }
     AppComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -115,56 +121,64 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent);
     return AppComponent;
 }());
-exports.AppComponent = AppComponent;
+
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/app.module.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__public_public_component__ = __webpack_require__("../../../../../src/app/public/public.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__secure_secure_component__ = __webpack_require__("../../../../../src/app/secure/secure.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__secure_secure_module__ = __webpack_require__("../../../../../src/app/secure/secure.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__public_public_module__ = __webpack_require__("../../../../../src/app/public/public.module.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var platform_browser_1 = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var app_routing_module_1 = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-var app_component_1 = __webpack_require__("../../../../../src/app/app.component.ts");
-var login_component_1 = __webpack_require__("../../../../../src/app/login/login.component.ts");
-var public_component_1 = __webpack_require__("../../../../../src/app/public/public.component.ts");
-var secure_component_1 = __webpack_require__("../../../../../src/app/secure/secure.component.ts");
-var secure_module_1 = __webpack_require__("../../../../../src/app/secure/secure.module.ts");
-var public_module_1 = __webpack_require__("../../../../../src/app/public/public.module.ts");
+
+
+
+
+
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        core_1.NgModule({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                app_component_1.AppComponent,
-                login_component_1.LoginComponent,
-                public_component_1.PublicComponent,
-                secure_component_1.SecureComponent
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__login_login_component__["a" /* LoginComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__public_public_component__["a" /* PublicComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__secure_secure_component__["a" /* SecureComponent */]
             ],
             imports: [
-                platform_browser_1.BrowserModule,
-                app_routing_module_1.AppRoutingModule,
-                secure_module_1.SecureModule,
-                public_module_1.PublicModule
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_7__secure_secure_module__["a" /* SecureModule */],
+                __WEBPACK_IMPORTED_MODULE_8__public_public_module__["a" /* PublicModule */]
             ],
             providers: [],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
 }());
-exports.AppModule = AppModule;
+
 
 
 /***/ }),
@@ -195,10 +209,11 @@ module.exports = "<div class=\"container\">\n  <div class=\"col-4 offset-4 login
 /***/ }),
 
 /***/ "../../../../../src/app/login/login.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -208,15 +223,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
+
 var LoginComponent = /** @class */ (function () {
     function LoginComponent() {
     }
     LoginComponent.prototype.ngOnInit = function () {
     };
     LoginComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-login',
             template: __webpack_require__("../../../../../src/app/login/login.component.html"),
             styles: [__webpack_require__("../../../../../src/app/login/login.component.css")]
@@ -225,7 +239,7 @@ var LoginComponent = /** @class */ (function () {
     ], LoginComponent);
     return LoginComponent;
 }());
-exports.LoginComponent = LoginComponent;
+
 
 
 /***/ }),
@@ -256,10 +270,11 @@ module.exports = "this is home\n"
 /***/ }),
 
 /***/ "../../../../../src/app/public/home/home.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -269,15 +284,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
+
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
     HomeComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-home',
             template: __webpack_require__("../../../../../src/app/public/home/home.component.html"),
             styles: [__webpack_require__("../../../../../src/app/public/home/home.component.css")]
@@ -286,7 +300,7 @@ var HomeComponent = /** @class */ (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-exports.HomeComponent = HomeComponent;
+
 
 
 /***/ }),
@@ -312,15 +326,16 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/public/public.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n  <a class=\"navbar-brand\" href=\"#\">Public</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Dropdown\n        </a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n          <a class=\"dropdown-item\" href=\"#\">Action</a>\n          <a class=\"dropdown-item\" href=\"#\">Another action</a>\n          <div class=\"dropdown-divider\"></div>\n          <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n        </div>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav>\n\n<div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <img class=\"d-block w-100\" src=\"http://via.placeholder.com/1080x550\" alt=\"First slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"http://via.placeholder.com/350x150\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"http://via.placeholder.com/350x150\" alt=\"Third slide\">\n    </div>\n  </div>\n  <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Previous</span>\n  </a>\n  <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Next</span>\n  </a>\n</div>\n\n<router-outlet></router-outlet>\n"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n  <a class=\"navbar-brand\" href=\"#\">Public</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link</a>\n      </li>\n      <li class=\"nav-item dropdown\">\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          Dropdown\n        </a>\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n          <a class=\"dropdown-item\" href=\"#\">Action</a>\n          <a class=\"dropdown-item\" href=\"#\">Another action</a>\n          <div class=\"dropdown-divider\"></div>\n          <a class=\"dropdown-item\" href=\"#\">Something else here</a>\n        </div>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n      </li>\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n</nav>\n\n<div id=\"carouselExampleControls\" class=\"carousel slide\" data-ride=\"carousel\">\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      <img class=\"d-block w-100\" src=\"http://via.placeholder.com/1080x450\" alt=\"First slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"http://via.placeholder.com/350x150\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"http://via.placeholder.com/350x150\" alt=\"Third slide\">\n    </div>\n  </div>\n  <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Previous</span>\n  </a>\n  <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Next</span>\n  </a>\n</div>\n\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
 /***/ "../../../../../src/app/public/public.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -330,15 +345,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
+
 var PublicComponent = /** @class */ (function () {
     function PublicComponent() {
     }
     PublicComponent.prototype.ngOnInit = function () {
     };
     PublicComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-public',
             template: __webpack_require__("../../../../../src/app/public/public.component.html"),
             styles: [__webpack_require__("../../../../../src/app/public/public.component.css")]
@@ -347,53 +361,54 @@ var PublicComponent = /** @class */ (function () {
     ], PublicComponent);
     return PublicComponent;
 }());
-exports.PublicComponent = PublicComponent;
+
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/public/public.module.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__("../../../../../src/app/public/home/home.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var common_1 = __webpack_require__("../../../common/esm5/common.js");
-var home_component_1 = __webpack_require__("../../../../../src/app/public/home/home.component.ts");
+
+
+
 var PublicModule = /** @class */ (function () {
     function PublicModule() {
     }
     PublicModule = __decorate([
-        core_1.NgModule({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [
-                common_1.CommonModule
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]
             ],
             declarations: [
-                home_component_1.HomeComponent
+                __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */]
             ]
         })
     ], PublicModule);
     return PublicModule;
 }());
-exports.PublicModule = PublicModule;
+
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/routes/public.routes.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.PUBLIC_ROUTES = [
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PUBLIC_ROUTES; });
+var PUBLIC_ROUTES = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
 ];
 
@@ -401,23 +416,25 @@ exports.PUBLIC_ROUTES = [
 /***/ }),
 
 /***/ "../../../../../src/app/routes/secure.routes.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SECURE_ROUTES; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__secure_dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/secure/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__secure_product_product_component__ = __webpack_require__("../../../../../src/app/secure/product/product.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__secure_product_product_create_product_create_component__ = __webpack_require__("../../../../../src/app/secure/product/product-create/product-create.component.ts");
 
-Object.defineProperty(exports, "__esModule", { value: true });
-var dashboard_component_1 = __webpack_require__("../../../../../src/app/secure/dashboard/dashboard.component.ts");
-var product_component_1 = __webpack_require__("../../../../../src/app/secure/product/product.component.ts");
-var product_create_component_1 = __webpack_require__("../../../../../src/app/secure/product/product-create/product-create.component.ts");
-exports.SECURE_ROUTES = [
+
+
+var SECURE_ROUTES = [
     {
         path: 'admin', children: [
             { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-            { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
+            { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_0__secure_dashboard_dashboard_component__["a" /* DashboardComponent */] },
             {
                 path: 'products', children: [
-                    { path: '', component: product_component_1.ProductComponent },
-                    { path: 'create', component: product_create_component_1.ProductCreateComponent }
+                    { path: '', component: __WEBPACK_IMPORTED_MODULE_1__secure_product_product_component__["a" /* ProductComponent */] },
+                    { path: 'create', component: __WEBPACK_IMPORTED_MODULE_2__secure_product_product_create_product_create_component__["a" /* ProductCreateComponent */] }
                 ],
             }
         ]
@@ -453,10 +470,11 @@ module.exports = "<p>\n  dashboard works!\n</p>\n"
 /***/ }),
 
 /***/ "../../../../../src/app/secure/dashboard/dashboard.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -466,15 +484,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
+
 var DashboardComponent = /** @class */ (function () {
     function DashboardComponent() {
     }
     DashboardComponent.prototype.ngOnInit = function () {
     };
     DashboardComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-dashboard',
             template: __webpack_require__("../../../../../src/app/secure/dashboard/dashboard.component.html"),
             styles: [__webpack_require__("../../../../../src/app/secure/dashboard/dashboard.component.css")]
@@ -483,16 +500,18 @@ var DashboardComponent = /** @class */ (function () {
     ], DashboardComponent);
     return DashboardComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
+
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/secure/product.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -502,9 +521,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var http_1 = __webpack_require__("../../../common/esm5/http.js");
+
+
 var ProductService = /** @class */ (function () {
     function ProductService(http) {
         this.http = http;
@@ -516,12 +534,12 @@ var ProductService = /** @class */ (function () {
         return this.http.post('api/products', product);
     };
     ProductService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.HttpClient])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
     ], ProductService);
     return ProductService;
 }());
-exports.ProductService = ProductService;
+
 
 
 /***/ }),
@@ -552,10 +570,14 @@ module.exports = "<div class=\"container\">\n  <div class=\"col-6 offset-3\">\n 
 /***/ }),
 
 /***/ "../../../../../src/app/secure/product/product-create/product-create.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductCreateComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__product_service__ = __webpack_require__("../../../../../src/app/secure/product.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -565,11 +587,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
-var product_service_1 = __webpack_require__("../../../../../src/app/secure/product.service.ts");
-var router_1 = __webpack_require__("../../../router/esm5/router.js");
+
+
+
+
 var ProductCreateComponent = /** @class */ (function () {
     function ProductCreateComponent(fb, productService, router) {
         this.fb = fb;
@@ -578,9 +599,9 @@ var ProductCreateComponent = /** @class */ (function () {
     }
     ProductCreateComponent.prototype.ngOnInit = function () {
         this.product = this.fb.group({
-            name: ['', forms_1.Validators.required],
-            brand: ['', forms_1.Validators.required],
-            price: ['', forms_1.Validators.required]
+            name: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].required],
+            brand: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].required],
+            price: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].required]
         });
     };
     ProductCreateComponent.prototype.addProduct = function () {
@@ -591,18 +612,18 @@ var ProductCreateComponent = /** @class */ (function () {
         return this.product.controls[control].invalid && this.product.controls[control].touched ? 'is-invalid' : '';
     };
     ProductCreateComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-product-create',
             template: __webpack_require__("../../../../../src/app/secure/product/product-create/product-create.component.html"),
             styles: [__webpack_require__("../../../../../src/app/secure/product/product-create/product-create.component.css")]
         }),
-        __metadata("design:paramtypes", [forms_1.FormBuilder,
-            product_service_1.ProductService,
-            router_1.Router])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_2__product_service__["a" /* ProductService */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]])
     ], ProductCreateComponent);
     return ProductCreateComponent;
 }());
-exports.ProductCreateComponent = ProductCreateComponent;
+
 
 
 /***/ }),
@@ -633,10 +654,13 @@ module.exports = "<div class=\"container\">\n  <button class=\"btn btn-sm btn-su
 /***/ }),
 
 /***/ "../../../../../src/app/secure/product/product.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__product_service__ = __webpack_require__("../../../../../src/app/secure/product.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -646,10 +670,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var router_1 = __webpack_require__("../../../router/esm5/router.js");
-var product_service_1 = __webpack_require__("../../../../../src/app/secure/product.service.ts");
+
+
+
 var ProductComponent = /** @class */ (function () {
     function ProductComponent(router, productService) {
         this.router = router;
@@ -663,16 +686,16 @@ var ProductComponent = /** @class */ (function () {
         this.router.navigateByUrl('/admin/products/create').catch();
     };
     ProductComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-product',
             template: __webpack_require__("../../../../../src/app/secure/product/product.component.html"),
             styles: [__webpack_require__("../../../../../src/app/secure/product/product.component.css")]
         }),
-        __metadata("design:paramtypes", [router_1.Router, product_service_1.ProductService])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_2__product_service__["a" /* ProductService */]])
     ], ProductComponent);
     return ProductComponent;
 }());
-exports.ProductComponent = ProductComponent;
+
 
 
 /***/ }),
@@ -703,10 +726,11 @@ module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\
 /***/ }),
 
 /***/ "../../../../../src/app/secure/secure.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SecureComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -716,15 +740,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
+
 var SecureComponent = /** @class */ (function () {
     function SecureComponent() {
     }
     SecureComponent.prototype.ngOnInit = function () {
     };
     SecureComponent = __decorate([
-        core_1.Component({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-secure',
             template: __webpack_require__("../../../../../src/app/secure/secure.component.html"),
             styles: [__webpack_require__("../../../../../src/app/secure/secure.component.css")]
@@ -733,67 +756,73 @@ var SecureComponent = /** @class */ (function () {
     ], SecureComponent);
     return SecureComponent;
 }());
-exports.SecureComponent = SecureComponent;
+
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/secure/secure.module.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SecureModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/secure/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__product_product_component__ = __webpack_require__("../../../../../src/app/secure/product/product.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__product_product_create_product_create_component__ = __webpack_require__("../../../../../src/app/secure/product/product-create/product-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__product_service__ = __webpack_require__("../../../../../src/app/secure/product.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var common_1 = __webpack_require__("../../../common/esm5/common.js");
-var dashboard_component_1 = __webpack_require__("../../../../../src/app/secure/dashboard/dashboard.component.ts");
-var product_component_1 = __webpack_require__("../../../../../src/app/secure/product/product.component.ts");
-var product_create_component_1 = __webpack_require__("../../../../../src/app/secure/product/product-create/product-create.component.ts");
-var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
-var http_1 = __webpack_require__("../../../common/esm5/http.js");
-var product_service_1 = __webpack_require__("../../../../../src/app/secure/product.service.ts");
+
+
+
+
+
+
+
+
 var SecureModule = /** @class */ (function () {
     function SecureModule() {
     }
     SecureModule = __decorate([
-        core_1.NgModule({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [
-                common_1.CommonModule,
-                forms_1.ReactiveFormsModule,
-                http_1.HttpClientModule
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_5__angular_forms__["b" /* ReactiveFormsModule */],
+                __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpClientModule */]
             ],
-            providers: [product_service_1.ProductService],
+            providers: [__WEBPACK_IMPORTED_MODULE_7__product_service__["a" /* ProductService */]],
             declarations: [
-                dashboard_component_1.DashboardComponent,
-                product_component_1.ProductComponent,
-                product_create_component_1.ProductCreateComponent,
+                __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard_component__["a" /* DashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_3__product_product_component__["a" /* ProductComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__product_product_create_product_create_component__["a" /* ProductCreateComponent */],
             ]
         })
     ], SecureModule);
     return SecureModule;
 }());
-exports.SecureModule = SecureModule;
+
 
 
 /***/ }),
 
 /***/ "../../../../../src/environments/environment.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
 // The file contents for the current environment will overwrite these during build.
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.environment = {
+var environment = {
     production: false
 };
 
@@ -801,19 +830,22 @@ exports.environment = {
 /***/ }),
 
 /***/ "../../../../../src/main.ts":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var platform_browser_dynamic_1 = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
-var app_module_1 = __webpack_require__("../../../../../src/app/app.module.ts");
-var environment_1 = __webpack_require__("../../../../../src/environments/environment.ts");
-if (environment_1.environment.production) {
-    core_1.enableProdMode();
+
+
+
+if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
 }
-platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule)
+Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
 
 
