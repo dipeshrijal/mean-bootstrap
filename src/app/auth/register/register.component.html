@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="col-4 offset-4 login-form">
+
+    <form novalidate
+          class="register-form"
+          [formGroup]="register"
+          (ngSubmit)="signup()"
+    >
+
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text"
+               class="form-control"
+               formControlName="fname"
+               id="fname"
+               [ngClass]="isValid('fname')"
+               placeholder="Enter First Name"
+        >
+        <div class="invalid-feedback">
+          Please provide a valid First Name.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text"
+               class="form-control"
+               formControlName="lname"
+               id="lname"
+               [ngClass]="isValid('lname')"
+               placeholder="Enter Last Name"
+        >
+        <div class="invalid-feedback">
+          Please provide a valid Last Name.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-Mail</label>
+        <input type="text"
+               class="form-control"
+               formControlName="email"
+               id="email"
+               [ngClass]="isValid('email')"
+               placeholder="Enter E-Mail"
+        >
+        <div class="invalid-feedback">
+          Please provide a valid E-Mail.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text"
+               class="form-control"
+               formControlName="password"
+               id="password"
+               [ngClass]="isValid('password')"
+               placeholder="Enter Password"
+        >
+        <div class="invalid-feedback">
+          Please provide a valid Password.
+        </div>
+      </div>
+
+      <button class="btn btn-block btn-success"
+              [disabled]="register.invalid"
+      >
+        Register
+      </button>
+
+    </form>
+
+
+  </div>
+</div>

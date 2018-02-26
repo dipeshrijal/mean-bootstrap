@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="col-4 offset-4 login-form">
+
+    <form novalidate
+          [formGroup]="login"
+          (ngSubmit)="signin()"
+    >
+
+      <div class="form-group">
+        <label for="email">E-Mail</label>
+        <input type="email"
+               class="form-control"
+               formControlName="email"
+               id="email"
+               [ngClass]="isValid('email')"
+               placeholder="Enter E-Mail"
+        >
+        <div class="invalid-feedback">
+          Please provide a valid E-Mail.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text"
+               class="form-control"
+               formControlName="password"
+               id="password"
+               [ngClass]="isValid('password')"
+               placeholder="Enter Password"
+        >
+        <div class="invalid-feedback">
+          Please provide a valid Password.
+        </div>
+      </div>
+
+      <button class="btn btn-block btn-success"
+              [disabled]="login.invalid"
+      >Login
+      </button>
+
+    </form>
+
+  </div>
+</div>
